@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointment & Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Salon System</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#salons">Salons</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Salon Appointment System</h2>
+            <p>Book your next appointment with ease!</p>
+            <a href="#salons" class="cta-button">Browse Salons</a>
+        </div>
+    </header>
+
+    <section id="salons" class="salons">
+        <h2>Available Salons</h2>
+        <div class="salon-list">
+            <div class="salon-card">
+                <img src="salon1.jpg" alt="Salon 1">
+                <h3>Salon Name 1</h3>
+                <p>Brief description of Salon 1.</p>
+            </div>
+            <div class="salon-card">
+                <img src="salon2.jpg" alt="Salon 2">
+                <h3>Salon Name 2</h3>
+                <p>Brief description of Salon 2.</p>
+            </div>
+            <!-- Add more salon cards as needed -->
+        </div>
+    </section>
+
+    <section id="appointments" class="appointments">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="salon">Select Salon:</label>
+            <select id="salon" name="salon" required>
+                <option value="">Choose a salon</option>
+                <option value="salon1">Salon 1</option>
+                <option value="salon2">Salon 2</option>
+            </select>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="haircut">Haircut</option>
+                <option value="manicure">Manicure</option>
+            </select>
+
+            <label for="beautician">Select Beautician:</label>
+            <select id="beautician" name="beautician" required>
+                <option value="">Choose a beautician</option>
+                <option value="beautician1">Beautician 1</option>
+                <option value="beautician2">Beautician 2</option>
+            </select>
+
+            <button type="submit" class="cta-button">Book Appointment
