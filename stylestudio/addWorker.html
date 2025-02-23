@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointment & Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Salon360</h1>
+            <ul class="nav-links">
+                <li><a href="../khushi/index.html">Home</a></li>
+                <li><a href="./addWorker.html">Add Stylist</a></li>
+                <li><a href="../aboutUs/index.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2>style studio</h2>  
+            <img src="style studio.jpg" alt="Salon 1">
+            <p>Style Studio – where fashion meets beauty!</p>
+          
+        </div>
+    </header>
+
+    <div class="bottombody">
+        <div class="appcontainer">
+            <h1>Salon Worker Entry</h1>
+            <form id="salonForm">
+                <label for="workerName">Worker Name:</label>
+                <input type="text" id="workerName" required>
+                <label for="timeSlots">Time Slots:</label>
+                <input type="checkbox" id="time_10_11" value="true"> 10-11 &nbsp;&nbsp;
+                <input type="checkbox" id="time_11_12" value="true"> 11-12 &nbsp;&nbsp;
+                <input type="checkbox" id="time_12_13" value="true"> 12-13 <br>
+                <label for="freeSlots">Free Slots:</label>
+                <span id="freeSlotsDisplay">0</span>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="message"></p>
+        </div>
+        </div>
+        <script>
+            const supabaseUrl = "https://mswuehawaxwdpqzeqynk.supabase.co";
+            const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1zd3VlaGF3YXh3ZHBxemVxeW5rIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyNTE1MjYsImV4cCI6MjA1NTgyNzUyNn0.GsVzpoazViIkV2pCQyYpVkdN2fkUEo1UGDLEQNsWzts";
+            const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+    
+            function updateFreeSlots() {
+                const time_10_11 = document.getElementById("time_10_11").checked;
+                const time_11_12 = document.getElementById("time_11_12").checked;
+                const time_12_13 = document.getElementById("time_12_13").checked;
+                const totalSlots = [time_10_11, time_11_12, time_12_13].filter(Boolean).length;
+                document.getElementById("freeSlotsDisplay").textContent = totalSlots;
+            }
+    
+            document.getElementById("time_10_11").addEventListener("change", updateFreeSlots);
+            document.getElementById("time_11_12").addEventListener("change", updateFreeSlots);
+            document.getElementById("time_12_13").addEventListener("change", updateFreeSlots);
+    
+            document.getElementById("salonForm").addEventListener("submit", async function(event) {
+                event.preventDefault();
+                const workerName = document.getElementById("workerName").value;
+                const time_10_11 = document.getElementById("time_10_11").checked;
+                const time_11_12 = document.getElementById("time_11_12").checked;
+                const time_12_13 = document.getElementById("time_12_13").checked;
+                const freeSlots = parseInt(document.getElementById("freeSlotsDisplay").textContent);
+                
+                const { data, error } = await supabase.from("StyleStudio").insert([
+                    {
+                        Workers: workerName,
+                        "10-11": time_10_11,
+                        "11-12": time_11_12,
+                        "12-13": time_12_13,
+                        "Free Slots": freeSlots
+                    }
+                ]);
+                
+                if (error) {
+                    document.getElementById("message").textContent = "Error: " + error.message;
+                } else {
+                    document.getElementById("message").textContent = "Data submitted successfully!";
+                    document.getElementById("salonForm").reset();
+                    updateFreeSlots();
+                }
+            });
+        </script>
+    </body>
+    </html>

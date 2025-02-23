@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointment & Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Salon360</h1>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#salons">Salons</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="../aboutUs/index.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Salon Appointment System</h2>
+            <p>Book your next appointment with ease!</p>
+            <a href="#salons" class="cta-button">Browse Salons</a>
+        </div>
+    </header>
+
+    <section id="salons" class="salons">
+        <h2>Available Salons</h2>
+        <div class="salon-list">
+
+            <a class="salon-card" href="../habibs/habibs.html">
+                <img src="./images/habibs.jpg" alt="Salon 1">
+                <h3>Habibs</h3>
+            </a>            
+           
+            <a class="salon-card" href="../LorealParis/loreal paris.html">
+                <img src="./images/download.png" alt="Salon 2">
+                <h3>Lorealparis</h3>
+            </a>
+            
+            <a class="salon-card" href="../habibi salon/habibi.html">
+                <img src="./images/habibi.jpg" alt="Salon 3">
+                <h3>Habibi salon</h3>
+            </a>
+            
+            <a class="salon-card" href="../Nova Style/Nova Style.html">
+                <img src="./images/nova style.jpg" alt="Salon 2">
+                <h3>Nova Style</h3>
+            </a>
+            
+            <a class="salon-card" href="../aura/aura.html">
+                <img src="./images/Aura.jpg" alt="Salon 2">
+                <h3>Aura Salon</h3>
+            </a>
+            
+            <a class="salon-card" href="../stylestudio/stylestudio.html">
+                <img src="./images/style studio.jpg" alt="Salon 2">
+                <h3>Style Studio</h3>
+            </a>
+            
+            </button></a>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    <script>
+        function bookAppointment(salonName, workerName, time) {
+            const appointmentsTableBody = document.querySelector('#appointments-table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${salonName}</td>
+                             <td>${workerName}</td>
+                             <td>${time}</td>`;
+            appointmentsTableBody.appendChild(row);
+            alert(`You have booked an appointment at ${salonName} with ${workerName} at ${time}.`);
+        }
+    </script>
+</body>
+</html>

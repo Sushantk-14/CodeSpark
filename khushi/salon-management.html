@@ -1,0 +1,43 @@
+<!-- salon-management.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Management</title>
+    <link rel="stylesheet" href="salon-management.css">
+</head>
+<body>
+    <h1>Salon Management</h1>
+    <button id="toggleSection">Switch to User Section</button>
+    
+    <div id="adminSection">
+        <h2>Admin Section</h2>
+        <label>Select Salon:
+            <select id="salonSelect">
+                <option>Choose a salon</option>
+            </select>
+        </label>
+        <label>Select Worker:
+            <select id="workerSelect">
+                <option>Choose a worker</option>
+            </select>
+        </label>
+        <label>Select New Time Slot:
+            <input type="text" id="timeSlotInput" placeholder="e.g., 2:00 PM">
+        </label>
+        <button id="updateSlot">Update Slot</button>
+        <h3>Assigned Slots</h3>
+        <ul id="assignedSlots"></ul>
+    </div>
+
+    <div id="userSection" style="display:none;">
+        <h2>User Section</h2>
+        <button id="toggleSectionUser">Switch to Admin Section</button>
+        <h3>Available Slots</h3>
+        <ul id="availableSlots"></ul>
+    </div>
+
+    <script src="salon-management.js"></script>
+</body>
+</html>

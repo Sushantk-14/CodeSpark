@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Salon Management System</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Worker Name</th>
+                    <th>Free Time Slots</th>
+                    <th>Change Time Slot</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>
+                        <input type="time" id="freeTime1" value="10:00">
+                        <input type="time" id="freeTime2" value="12:00">
+                    </td>
+                    <td>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime1', true)">Change</button>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime2', false)">Change</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>
+                        <input type="time" id="freeTime3" value="12:00">
+                        <input type="time" id="freeTime4" value="14:00">
+                    </td>
+                    <td>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime3', true)">Change</button>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime4', false)">Change</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>
+                        <input type="time" id="freeTime5" value="14:00">
+                        <input type="time" id="freeTime6" value="16:00">
+                    </td>
+                    <td>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime5', true)">Change</button>
+                        <button class="change-btn" onclick="changeTimeSlot('freeTime6', false)">Change</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

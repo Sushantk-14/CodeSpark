@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Appointment Management</h2>
+    
+    <!-- Search Section -->
+    <div>
+        <label for="search">Find Appointment:</label>
+        <input type="text" id="search" placeholder="Enter Name or Date">
+        <button onclick="searchAppointment()">Search</button>
+    </div>
+    
+    <!-- Availability Chart -->
+    <h3>Availability Chart</h3>
+    <div id="availabilityChart"></div>
+    
+    <!-- Appointment List -->
+    <h3>Appointment List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="appointmentsTable"></tbody>
+    </table>
+    
+    <script src="Appointments.js"></script>
+</body>
+</html>
+    <title>Appointments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Appointment Management</h2>
+    

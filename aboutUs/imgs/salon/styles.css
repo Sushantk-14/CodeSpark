@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    font-size: 3em; /* Larger font size */
+    background: linear-gradient(90deg, #ff6a00, #ee0979); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+    margin-bottom: 20px; /* Space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    padding: 10px; /* Padding around the text */
+}
+
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 15px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+th {
+    background: linear-gradient(90deg, #007bff, #00c6ff); /* Gradient background for headers */
+    color: white; /* White text for headers */
+    font-weight: bold; /* Bold text for headers */
+}
+
+td {
+    background-color: #f8f9fa; /* Light gray background for table rows */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+td:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+input[type="time"] {
+    width: 100%; /* Full width for time input */
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input */
+    font-size: 1em; /* Font size for input */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="time"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.change-btn {
+    background: linear-gradient(90deg, #28a745, #85e3b0); /* Gradient background for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for buttons */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+}
+
+.change-btn:hover {
+    background: linear-gradient(90deg, #218838, #6fdc8a); /* Darker gradient on hover */
+    transform: scale(1.05

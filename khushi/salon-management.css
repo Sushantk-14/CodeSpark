@@ -1,0 +1,34 @@
+.management {
+    padding: 40px 0;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00796b;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+}
+
+.time-slot {
+    display: inline-block;
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.time-select {
+    padding: 5px;
+}

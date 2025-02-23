@@ -1,0 +1,505 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0808;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color:  linear-gradient(to right, #ddacdd, #c9e0e3);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(255, 254, 254, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.availability-container {
+    display: flex;
+    gap: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(255, 254, 254, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+}
+
+h1 {
+    margin: 0;
+}
+/* Base styles */
+
+body {
+    
+    font-family: Arial, sans-serif;
+}
+.logo {
+    width: 80px; /* Adjust the width as needed */
+    height: 800px;
+    height: auto; /* Keeps the aspect ratio */
+    display: outside;
+    
+    margin-left: 60px; /* Adds space between the logo and the heading */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 10px;
+    gap: 100px;
+}
+
+
+
+/* Dashboard styles */
+.dashboard {
+    position: fixed;
+    left: -300px; /* Hide by default, adjust width as needed */
+    top: 0;
+    width: 225px; /* Adjust width as needed */
+    height: 100%;
+    background-color: rgb(246, 244, 244);
+    border-right: 2px solid rgb(246, 244, 244);
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+
+/* Show dashboard */
+.dashboard.show {
+    left: 0;
+}
+
+/* Dashboard toggle button styles */
+.dashboard-toggle {
+    position: sticky;
+    left: 10px;
+    top: 10px;
+    z-index: 1001;
+}
+
+/* Dashboard close button styles */
+.dashboard-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: rgb(47, 162, 47);
+}
+
+.btn-secondary:hover{
+    background-color: rgb(115, 109, 109);
+
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    margin-right: 0;
+    transition: margin-right 0.3s ease;
+}
+
+/* Resource Allocation Section */
+.resource-allocation {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button[type="submit"], .btn-secondary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #28a745;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #120101;
+    color: #949ec8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 5px rgba(255, 254, 254, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #7da7baec;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7ea5b7;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #ddacdd, #c9e0e3);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #040404;
+}
+
+/* Salons Section */
+.salons {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.salon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+.salon-card {
+    background-color: white;
+    border-radius: 8px;
+    border-color: white;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.salon-card img {
+    width: 20%;
+    border-radius: 8px;
+}
+
+.salon-card h3 {
+    margin: 10px 0;
+}
+
+.salon-card:hover {
+    transform: scale(1.05);
+}
+.open-slots {
+    background-color: #a3a6c0;
+    color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.open-slots:hover {
+    background-color: #92a8c4;
+}
+
+.management {
+    margin-top: 15px;
+    border: 1px solid #0b0b0b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Appointments Section */
+.appointments {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.appointments form {
+    background-color: rgb(244, 238, 243);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.appointments label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.appointments select, .appointments input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #020101;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.appointments button {
+    width: 100%;
+    padding: 10px;
+    background-color: #a2c6d3;
+    color: rgb(4, 0, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.appointments button:hover {
+    background-color: #7197bf;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efe8f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}  
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.navbar .logo {
+    color: rgb(5, 5, 5);
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+}
+
+/* Appointment Section */
+.appointment-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.salon-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.salon-card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(45, 23, 23, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.open-slots {
+    background-color: #95b5cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.open-slots:hover {
+    background-color: #8babcb;
+}
+
+.management {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #a3b4cc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #90a3c7;
+    color: white;
+}
+
+.time-slot {
+    display: inline-block;
+    background-color: #e0f7fa;
+    border: 1px solid #80a1bc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+.availability-container {
+    display: flex;
+    gap: 10px;
+}
+.availability-box {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 100px;
+    background-color: #f8d7da;
+}
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.appointment-table th, .appointment-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.search-section {
+    margin-bottom: 20px;
+}

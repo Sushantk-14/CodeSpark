@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Team Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: linear-gradient(to right, #ddacdd, #c9e0e3);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #11386b;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        li {
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        li:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member {
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .member-name {
+            margin-top: 10px;
+            color: #11386b;
+            font-weight: bold;
+        }
+
+        .linkedin-icon {
+            margin-top: 5px;
+            position: relative;
+        }
+
+        .linkedin-icon a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            position: relative;
+        }
+
+        .linkedin-icon img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: #11386b;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .linkedin-icon:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Salon360</h1>
+            <ul class="nav-links">
+                <li><a href="../khushi/index.html">Home</a></li>
+                <li><a href="../aboutUs/index.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>Team Members</h2>
+            <ul>
+                <li>
+                    <div class="team-member">
+                        <img src="imgs/ayush.jpg" alt="Ayush Kinekar">
+                    </div>
+                    <div class="member-name">Ayush Kinekar</div>
+                    <div>2nd yr B.Tech (CSE) student</div>
+                    <div class="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/kinkear-ayush/" target="_blank">
+                            <img src="imgs/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <div class="tooltip">View LinkedIn Profile</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="team-member">
+                        <img src="imgs/sushant.jpg" alt="Sushant Kshirsagar">
+                    </div>
+                    <div class="member-name">Sushant Kshirsagar</div>
+                    <div>2nd yr B.Tech (CSE) student</div>
+                    <div class="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/sushant-kshirsagar-8bb8a927a/" target="_blank">
+                            <img src="imgs/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <div class="tooltip">View LinkedIn Profile</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="team-member">
+                        <img src="imgs/khushi.jpg" alt="Khushabu Mahajan">
+                    </div>
+                    <div class="member-name">Khushabu Mahajan</div>
+                    <div>2nd yr B.Tech (CSE) student</div>
+                    <div class="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/khushabu-mahajan-2867702a4/" target="_blank">
+                            <img src="imgs/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <div class="tooltip">View LinkedIn Profile</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="team-member">
+                        <img src="imgs/sakshi.jpg" alt="Sakshi Biradar">
+                    </div>
+                    <div class="member-name">Sakshi Biradar</div>
+                    <div>2nd yr B.Tech (CSE) student</div>
+                    <div class="linkedin-icon">
+                        <a href="https://www.linkedin.com/in/sakshi-biradar-796465274/" target="_blank">
+                            <img src="imgs/linkedin.png" alt="LinkedIn">
+                        </a>
+                        <div class="tooltip">View LinkedIn Profile</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

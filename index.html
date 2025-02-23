@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salon Appointment & Management System</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./khushi/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">Salon System</h1>
+            <h1 class="logo">Salon360</h1>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#salons">Salons</a></li>
                 <li><a href="#appointments">Appointments</a></li>
-                <li><a href="#admin">Admin</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="./aboutUs/index.html">About Us</a></li>
             </ul>
         </div>
     </nav>
@@ -32,42 +31,52 @@
     <section id="salons" class="salons">
         <h2>Available Salons</h2>
         <div class="salon-list">
-            <div class="salon-card">
-                <img src="salon1.jpg" alt="Salon 1">
-                <h3>Salon Name 1</h3>
-                <p>Brief description of Salon 1.</p>
-            </div>
-            <div class="salon-card">
-                <img src="salon2.jpg" alt="Salon 2">
-                <h3>Salon Name 2</h3>
-                <p>Brief description of Salon 2.</p>
-            </div>
-            <!-- Add more salon cards as needed -->
+
+            <a class="salon-card" href="./habibs/habibs.html">
+                <img src="./khushi/images/habibs.jpg" alt="Salon 1">
+                <h3>Habibs</h3>
+            </a>            
+           
+            <a class="salon-card" href="./LorealParis/loreal paris.html">
+                <img src="./khushi/images/download.png" alt="Salon 2">
+                <h3>Lorealparis</h3>
+            </a>
+            
+            <a class="salon-card" href="./habibi salon/habibi.html">
+                <img src="./khushi/images/habibi.jpg" alt="Salon 3">
+                <h3>Habibi salon</h3>
+            </a>
+            
+            <a class="salon-card" href="./Nova Style/Nova Style.html">
+                <img src="./khushi/images/nova style.jpg" alt="Salon 2">
+                <h3>Nova Style</h3>
+            </a>
+            
+            <a class="salon-card" href="./aura/aura.html">
+                <img src="./khushi/images/Aura.jpg" alt="Salon 2">
+                <h3>Aura Salon</h3>
+            </a>
+            
+            <a class="salon-card" href="./stylestudio/stylestudio.html">
+                <img src="./khushi/images/style studio.jpg" alt="Salon 2">
+                <h3>Style Studio</h3>
+            </a>
+            
+            </button></a>
         </div>
     </section>
-
-    <section id="appointments" class="appointments">
-        <h2>Book an Appointment</h2>
-        <form id="appointment-form">
-            <label for="salon">Select Salon:</label>
-            <select id="salon" name="salon" required>
-                <option value="">Choose a salon</option>
-                <option value="salon1">Salon 1</option>
-                <option value="salon2">Salon 2</option>
-            </select>
-
-            <label for="service">Select Service:</label>
-            <select id="service" name="service" required>
-                <option value="">Choose a service</option>
-                <option value="haircut">Haircut</option>
-                <option value="manicure">Manicure</option>
-            </select>
-
-            <label for="beautician">Select Beautician:</label>
-            <select id="beautician" name="beautician" required>
-                <option value="">Choose a beautician</option>
-                <option value="beautician1">Beautician 1</option>
-                <option value="beautician2">Beautician 2</option>
-            </select>
-
-            <button type="submit" class="cta-button">Book Appointment
+    
+    <script src="./khushi/script.js"></script>
+    <script>
+        function bookAppointment(salonName, workerName, time) {
+            const appointmentsTableBody = document.querySelector('#appointments-table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${salonName}</td>
+                             <td>${workerName}</td>
+                             <td>${time}</td>`;
+            appointmentsTableBody.appendChild(row);
+            alert(`You have booked an appointment at ${salonName} with ${workerName} at ${time}.`);
+        }
+    </script>
+</body>
+</html>
